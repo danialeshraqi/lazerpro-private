@@ -1,0 +1,219 @@
+body {
+  background-color: #fdfdfd !important;
+  font-family: YekanBakh, Poppins, serif !important;
+  direction: rtl;
+  padding: 56px 0 0;
+}
+
+* {
+  font-family: YekanBakh, Poppins, serif !important;
+  direction: rtl;
+}
+
+/* از اینجا بزن  */
+.h3-1{
+  color: #109FD7;
+  line-height: 28px;
+  font-weight: 700;
+}
+.h1-1{
+  font-size: 50px;
+  font-weight: 950;
+  line-height: 43px;
+} 
+.articel-p-1{
+  padding:71px 100px 0;
+  line-height: 71px;
+  font-size: 18px;
+  color: #292D32;
+}
+.span-1{
+  color:#FFFFFF ;
+  background-color:#109FD7 ;
+  border-radius: 10px;
+  border: none;
+  padding:  9px 51px 9px 31px;
+}
+
+.div-4{
+  display: flex;
+align-items: center;
+justify-content: space-between;
+border-bottom:1px dashed #D8D8D8 ;
+padding-bottom: 66px;
+}
+.div-2{
+  border-right: 3px solid #109FD7;
+  padding-right: 16px;
+  display: flex;
+  flex-direction: column;
+}
+.articel-p-2{
+  padding: 38px 100px 98px;
+  line-height: 71px;
+  font-size: 18px;
+}
+.articel-div-0{
+ background: #FFFFFF;
+box-shadow: 0px 11px 24px rgba(0, 0, 0, 0.04);
+ border-radius: 25px;
+ padding: 42px 51px 56px 48px ;
+ margin: 0px 170px ;
+}
+.articel-div-6{
+  display: flex;
+  gap: 18px ;
+}
+.articel-button-1{
+  background-color: #109FD7;
+  border-radius: 12px;
+  border: none;
+  color: #FFFFFF;
+  padding:5px 25px ;
+}
+.articel-div-5{
+  padding: 0px 101px ;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.articel-div-00{
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 20px;
+padding:0 93px 0px 75px ;
+margin: 144px 92px 0;
+}
+.articel-span-1{
+  
+  font-size: 32px;
+  font-weight: 700;
+}
+.articel-span-2{
+color: #8aaae5;
+white-space: nowrap;
+}
+.articel-span-3{
+white-space: nowrap;
+} 
+.articel-div-000{
+  width: 100%;
+  height: 1px;
+  border-bottom: 1.5px dashed #D8D8D8;
+}
+.articel-div-0000{
+padding: 106px 110px;
+gap: 57px;
+display: flex;
+}
+.articel-div0000-1{
+  background: #FFFFFF;
+  /* Sh1 */
+  box-shadow: 0px 11px 24px rgba(0, 0, 0, 0.04);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+}
+.articel-div0000-1-1{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  padding: 24px 24px 0 22px;
+  
+}
+.articel-span1-00001{
+  border-right: 3px solid #11A5DF;
+  font-size: 18px;
+  font-weight: 700;
+  padding:  0 13px 0 0;
+  height: fit-content;
+}
+.articel-span2-00001{
+font-size: 12px;
+font-weight: 700;
+color: #C6C6C6;
+}
+.articel-p-00001{
+font-size: 14px;
+font-weight: 400;
+line-height: 202%;
+padding: 0 22px 44px 18px; 
+}
+.articel-div-001{
+  display: flex;
+  padding: 18px 0;
+  background: #F5F5F5;
+}
+.articel-div-002{
+display: flex;
+justify-content: space-between;
+align-items: center;
+width: 60%;
+border-left: 2px dashed #CED2D6;
+padding: 70px 86px 70px 80px;
+}
+.articel-span-001{
+  font-weight: 900;
+  font-size: 22PX;
+}
+.articel-div-003{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+}
+.articel-div-004{
+display: flex;
+gap: 10px;
+}
+.articel-button-001{
+  padding: 10px 92px;
+  background: #00ADB5;
+  color: #FFFFFF;
+  border-radius: 5px;
+  height: 48px;
+  border: none;
+}
+.articel-button-002{
+background: #24CC63;
+border-radius: 6px;
+width: 48px;
+height: 48px;
+border: none;
+}
+.articel-span-002{
+font-weight: 900;
+font-size: 22PX;
+}
+.articel-button-003{
+border: none;
+color: white;
+background: #8AAAE5;
+border-radius: 10px;
+padding: 10px 46px;
+font-weight: 900;
+font-size: 18PX;
+}
+.articel-div-006{
+  background: #FFFFFF;
+  border-radius: 20px;
+  padding: 24px 19px 24px 54px;
+  display: flex;
+  align-items: center;
+  gap: 54px;
+}
+.articel-div-7{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 70px 56px;
+  border-top: 1px dashed #D8D8D8;
+  margin-top: 154px;
+}
+.articel-div-007{
+  display: flex;
+  gap: 34px;
+}

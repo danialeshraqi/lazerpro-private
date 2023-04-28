@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="fa">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>لیزرپرو - خانه</title>
+    <style></style>
+    <link
+      rel="preload"
+      href="../../src/font/fonts.css"
+      as="style"
+      onload="this.rel='stylesheet'"
+    />
+    <link
+      rel="preload"
+      href="style.min.css"
+      as="style"
+      onload="this.rel='stylesheet'"
+    />
+    <link
+      rel="preload"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+      as="style"
+      onload="this.rel='stylesheet'"
+    />
+    <style>
+      header {
+        position: relative;
+        color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        padding: 50px 50px 0;
+        row-gap: 55px;
+        margin-bottom: 70px;
+      }
+
+      .header-img-2 {
+        position: absolute;
+        width: 100%;
+        height: 256px;
+        object-fit: fill;
+        right: 0;
+        top: 0;
+        z-index: -1;
+      }
+
+      .header-div-2 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .header-div-6 {
+        width: 56px;
+        height: 56px;
+        background: #00adb5;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.06);
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .header-div-7 {
+        width: 56px;
+        height: 56px;
+
+        background: #bfbfbf;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.06);
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .header-div-7 img svg path {
+        fill: #000000 !important;
+      }
+
+      .header-div-8 {
+        width: 56px;
+        height: 56px;
+        background: #1f1f1f;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.06);
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .header-div-4 {
+        display: flex;
+        column-gap: 15px;
+      }
+
+      .header-div-1 {
+        z-index: 5;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .header-input-1 {
+        border: none;
+        outline: none;
+        background: #f1f1f1;
+        color: #c1c1c1;
+        border-radius: 5px;
+        width: 316px;
+        padding: 0 25px;
+      }
+
+      .header-input-1::placeholder {
+        color: #c1c1c1;
+      }
+
+      .header-img-1 {
+        background: #141414;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        padding: 8px;
+      }
+
+      .header-div-3 {
+        display: flex;
+        align-items: center;
+        column-gap: 20px;
+      }
+
+      .header-span-1 {
+        font-weight: 400;
+        font-size: 22px;
+        font-family: Sarbaz, serif;
+        color: #141414;
+      }
+
+      .header-ul-1 {
+        list-style: none;
+        display: flex;
+        column-gap: 30px;
+        padding: 0;
+        margin: 0;
+      }
+
+      .header-ul-1 a {
+        color: #141414;
+        font-weight: 500;
+        text-decoration: none;
+      }
+
+      .header-ul-1 a:hover {
+        color: #141414;
+      }
+
+      .header-ul-1 .active a {
+        color: #0cc199;
+      }
+
+      .header-img-3 {
+        display: none;
+      }
+
+      body {
+        background-color: #fdfdfd !important;
+        font-family: YekanBakh, VazirFd, Poppins, serif !important;
+        direction: rtl;
+      }
+
+      main {
+        position: relative;
+        padding: 50px 0;
+      }
+
+      ::-webkit-scrollbar {
+        display: none;
+      }
+
+      .contact-img-1 {
+        position: absolute;
+        left: 0;
+        top: 100px;
+      }
+      .contact-img-2 {
+        position: absolute;
+        right: -60px;
+        transform: rotate(180deg);
+        top: 60px;
+        height: 400px;
+      }
+
+      .contact-first-sectoin {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: #292d32;
+        row-gap: 24px;
+        margin-bottom: 50px;
+      }
+
+      .contact-first-section-span-1 {
+        font-size: 40px;
+        font-weight: 950;
+      }
+      .contact-first-section-span-2 {
+        font-weight: 400;
+        font-size: 22px;
+        color: #8a929b;
+      }
+
+      @media screen and (max-width: 992px) {
+        header {
+          padding: 30px 30px 0;
+          row-gap: 30px;
+          margin-bottom: 100px;
+        }
+
+        .header-img-2 {
+          height: 200px;
+        }
+
+        .header-div-8,
+        .header-div-7,
+        .header-div-6 {
+          width: 36px;
+          height: 36px;
+        }
+
+        .header-div-8 img,
+        .header-div-7 img,
+        .header-div-6 img {
+          width: 20px;
+          height: 20px;
+        }
+
+        .header-input-1 {
+          width: 200px;
+          padding: 0 10px;
+          font-size: 12px;
+        }
+
+        .header-ul-1 {
+          column-gap: 20px;
+          font-size: 13px;
+        }
+      }
+
+      @media screen and (max-width: 576px) {
+        .header-div-3 {
+          column-gap: 10px;
+        }
+
+        .header-img-1 {
+          width: 40px;
+          height: 40px;
+        }
+
+        .header-span-1 {
+          font-size: 16 px;
+        }
+
+        header {
+          padding: 30px 20px 0;
+          row-gap: 25px;
+        }
+
+        .header-img-2 {
+          height: 170px;
+        }
+
+        .header-div-8,
+        .header-div-7,
+        .header-div-6 {
+          width: 30px;
+          height: 30px;
+        }
+
+        .header-div-8 img,
+        .header-div-7 img,
+        .header-div-6 img {
+          width: 16px;
+          height: 16px;
+        }
+
+        .header-input-1 {
+          width: 140px;
+          padding: 0 10px;
+          font-size: 12px;
+        }
+
+        .header-div-4 {
+          column-gap: 5px;
+        }
+
+        .header-ul-1 {
+          column-gap: 15px;
+          font-size: 11px;
+        }
+      }
+
+      @media screen and (max-width: 480px) {
+        header {
+          padding: 20px 10px 0 30px;
+          margin-bottom: 50px;
+        }
+
+        .header-img-2 {
+          height: 120px;
+        }
+
+        .header-div-8,
+        .header-div-7,
+        .header-div-6 {
+          width: 42px;
+          height: 42px;
+        }
+
+        .header-input-1 {
+          display: none;
+        }
+
+        .header-ul-1 {
+          display: none;
+        }
+
+        .header-img-3 {
+          display: block;
+        }
+
+        main {
+          padding: 0 0 60px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="contact-first-sectoin">
+        <span class="contact-first-section-span-1">ارتباط با ما</span>
+        <span class="contact-first-section-span-2">
+          فـرم تمـاس با مـا شرکـت لیزر پرو
+        </span>
+      </section>
+      <section class="contact-second-section">
+        <div class="contact-second-section-div-1">
+          <span class="contact-second-section-span-2">فرم تماس با ما </span>
+          <span class="contact-second-section-span-3"
+            >از طریق فرم زیر با ما ارتباط برقرار کنید</span
+          >
+        </div>
+        <div class="contact-second-section-div-7">
+          <div class="contact-second-section-div-2">
+            <span class="contact-label">نام و نام خانوادگی</span>
+            <div class="contact-second-section-div-9">
+              <img
+                style="
+                  filter: invert(66%) sepia(0%) saturate(0%) hue-rotate(231deg)
+                    brightness(98%) contrast(81%);
+                "
+                src="../../src/assets/icons/user.svg"
+                alt=""
+              />
+              <input />
+            </div>
+            <span class="contact-label">پست الکترونیکی</span>
+            <div class="contact-second-section-div-9">
+              <img
+                style="
+                  filter: invert(66%) sepia(0%) saturate(0%) hue-rotate(231deg)
+                    brightness(98%) contrast(81%);
+                "
+                src="../../src/assets/icons/sms.svg"
+                alt=""
+              />
+              <input />
+            </div>
+            <span class="contact-label">موضوع</span>
+            <div class="contact-second-section-div-9">
+              <img
+                style="
+                  filter: invert(66%) sepia(0%) saturate(0%) hue-rotate(231deg)
+                    brightness(98%) contrast(81%);
+                "
+                src="../../src/assets/icons/messages.svg"
+                alt=""
+              />
+              <input />
+            </div>
+            <span class="contact-label">متن پیام</span>
+            <div class="contact-second-section-div-9">
+              <textarea rows="8"></textarea>
+            </div>
+            <button class="contact-second-section-button-2">ارسال پیام</button>
+          </div>
+          <div class="contact-second-section-div-8">
+            <span class="contact-label">آدرس شرکت</span>
+            <div class="contact-second-section-div-10">
+              <span>تهران، میدان ولیعصر، کوچه فرشید، پلاک ۱۰ </span>
+              <img src="../../src/assets/icons/map-marker-alt.svg" />
+            </div>
+            <span class="contact-label">تلفن تماس</span>
+            <div class="contact-second-section-div-10">
+              <span class="contact-number-container">
+                <span class="contact-number">
+                  88852013
+                  <span>21</span>
+                </span>
+                -
+                <span class="contact-number">
+                  88852014
+                  <span>21</span>
+                </span>
+              </span>
+              <img
+                class="contact-second-section-img-1"
+                src="../../src/assets/icons/phone.svg"
+              />
+            </div>
+            <span class="contact-label">پست الکترونیک</span>
+            <div class="contact-second-section-div-10">
+              <span>info@laserpro.com</span>
+              <img src="../../src/assets/icons/envelope.svg" />
+            </div>
+            <div class="contact-second-section-div-11">
+              <img
+                class="contact-second-section-img-2"
+                src="../../src/assets/images/image31.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contact-third-section">
+        <div class="contact-third-section-div-1">
+          <span class="contact-third-section-span-1">
+            سوالات متداول
+            <span></span>
+          </span>
+          <span class="contact-third-section-span-2"
+            >برخی از سوالاتی که ممکن است برای شما پیش آید</span
+          >
+        </div>
+        <div class="contact-third-section-div-2">
+          <div
+            class="contact-third-section-div-3"
+            data-bs-toggle="collapse"
+            href="#collapseExample1"
+          >
+            <span class="contact-third-section-span-3"
+              >کالای خریداری شده را چطور میتوانم مرجوع کنم ؟</span
+            >
+            <img
+              src="../../src/assets/icons/arrow-down.svg"
+              style="
+                filter: invert(100%) sepia(100%) saturate(6%) hue-rotate(239deg)
+                  brightness(5%) contrast(100%);
+              "
+            />
+          </div>
+          <div
+            class="contact-third-section-div-4 collapse"
+            id="collapseExample1"
+          >
+            <div></div>
+            لورم ایپسوم متن ساختـگی با تولید سادگی نامفـهوم از صـنعت چاپ، و با
+            استفاده از طراحان گرافیک است، چاپـگرها و متون بلکه روزنامه و مجله در
+            ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکــنولوژی مــورد
+            نیاز، و کاربردهای متـــنوع با هـــدف بهبود ابزارهای کاربــردی می
+            باشد، کتابهای زیادی در شصــت و سه درصد گذشته حال و آینده، شناخت
+            فراوان
+          </div>
+          <div
+            class="contact-third-section-div-3"
+            data-bs-toggle="collapse"
+            href="#collapseExample2"
+          >
+            <span class="contact-third-section-span-3"
+              >کالای خریداری شده را چطور میتوانم مرجوع کنم ؟</span
+            >
+            <img
+              src="../../src/assets/icons/arrow-down.svg"
+              style="
+                filter: invert(100%) sepia(100%) saturate(6%) hue-rotate(239deg)
+                  brightness(5%) contrast(100%);
+              "
+            />
+          </div>
+          <div
+            class="contact-third-section-div-4 collapse"
+            id="collapseExample2"
+          >
+            <div></div>
+            لورم ایپسوم متن ساختـگی با تولید سادگی نامفـهوم از صـنعت چاپ، و با
+            استفاده از طراحان گرافیک است، چاپـگرها و متون بلکه روزنامه و مجله در
+            ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکــنولوژی مــورد
+            نیاز، و کاربردهای متـــنوع با هـــدف بهبود ابزارهای کاربــردی می
+            باشد، کتابهای زیادی در شصــت و سه درصد گذشته حال و آینده، شناخت
+            فراوان
+          </div>
+          <div
+            class="contact-third-section-div-3"
+            data-bs-toggle="collapse"
+            href="#collapseExample3"
+          >
+            <span class="contact-third-section-span-3"
+              >چطور درخواست خود را جهت مرجوعی کالا به شما اطلاع دهم؟</span
+            >
+            <img
+              src="../../src/assets/icons/arrow-down.svg"
+              style="
+                filter: invert(100%) sepia(100%) saturate(6%) hue-rotate(239deg)
+                  brightness(5%) contrast(100%);
+              "
+            />
+          </div>
+          <div
+            class="contact-third-section-div-4 collapse"
+            id="collapseExample3"
+          >
+            <div></div>
+            لورم ایپسوم متن ساختـگی با تولید سادگی نامفـهوم از صـنعت چاپ، و با
+            استفاده از طراحان گرافیک است، چاپـگرها و متون بلکه روزنامه و مجله در
+            ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکــنولوژی مــورد
+            نیاز، و کاربردهای متـــنوع با هـــدف بهبود ابزارهای کاربــردی می
+            باشد، کتابهای زیادی در شصــت و سه درصد گذشته حال و آینده، شناخت
+            فراوان
+          </div>
+          <div
+            class="contact-third-section-div-3"
+            data-bs-toggle="collapse"
+            href="#collapseExample4"
+          >
+            <span class="contact-third-section-span-3"
+              >آیا می توانم هزینه کالا را هنگام تحویل کالا و در محل پرداخت نمایم
+              ؟</span
+            >
+            <img
+              src="../../src/assets/icons/arrow-down.svg"
+              style="
+                filter: invert(100%) sepia(100%) saturate(6%) hue-rotate(239deg)
+                  brightness(5%) contrast(100%);
+              "
+            />
+          </div>
+          <div
+            class="contact-third-section-div-4 collapse"
+            id="collapseExample4"
+          >
+            <div></div>
+            لورم ایپسوم متن ساختـگی با تولید سادگی نامفـهوم از صـنعت چاپ، و با
+            استفاده از طراحان گرافیک است، چاپـگرها و متون بلکه روزنامه و مجله در
+            ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکــنولوژی مــورد
+            نیاز، و کاربردهای متـــنوع با هـــدف بهبود ابزارهای کاربــردی می
+            باشد، کتابهای زیادی در شصــت و سه درصد گذشته حال و آینده، شناخت
+            فراوان
+          </div>
+          <div
+            class="contact-third-section-div-3"
+            data-bs-toggle="collapse"
+            href="#collapseExample5"
+          >
+            <span class="contact-third-section-span-3"
+              >چطور می توانم مبلغ کالای مرجوع شده را دریافت کنم ؟</span
+            >
+            <img
+              src="../../src/assets/icons/arrow-down.svg"
+              style="
+                filter: invert(100%) sepia(100%) saturate(6%) hue-rotate(239deg)
+                  brightness(5%) contrast(100%);
+              "
+            />
+          </div>
+          <div
+            class="contact-third-section-div-4 collapse"
+            id="collapseExample5"
+          >
+            <div></div>
+            لورم ایپسوم متن ساختـگی با تولید سادگی نامفـهوم از صـنعت چاپ، و با
+            استفاده از طراحان گرافیک است، چاپـگرها و متون بلکه روزنامه و مجله در
+            ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکــنولوژی مــورد
+            نیاز، و کاربردهای متـــنوع با هـــدف بهبود ابزارهای کاربــردی می
+            باشد، کتابهای زیادی در شصــت و سه درصد گذشته حال و آینده، شناخت
+            فراوان
+          </div>
+          <div
+            class="contact-third-section-div-3"
+            data-bs-toggle="collapse"
+            href="#collapseExample6"
+          >
+            <span class="contact-third-section-span-3"
+              >مدت زمان جهت تحویل کالای خریداری شده چقدر است ؟</span
+            >
+            <img
+              src="../../src/assets/icons/arrow-down.svg"
+              style="
+                filter: invert(100%) sepia(100%) saturate(6%) hue-rotate(239deg)
+                  brightness(5%) contrast(100%);
+              "
+            />
+          </div>
+          <div
+            class="contact-third-section-div-4 collapse"
+            id="collapseExample6"
+          >
+            <div></div>
+            لورم ایپسوم متن ساختـگی با تولید سادگی نامفـهوم از صـنعت چاپ، و با
+            استفاده از طراحان گرافیک است، چاپـگرها و متون بلکه روزنامه و مجله در
+            ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکــنولوژی مــورد
+            نیاز، و کاربردهای متـــنوع با هـــدف بهبود ابزارهای کاربــردی می
+            باشد، کتابهای زیادی در شصــت و سه درصد گذشته حال و آینده، شناخت
+            فراوان
+          </div>
+          <div
+            class="contact-third-section-div-3"
+            data-bs-toggle="collapse"
+            href="#collapseExample7"
+          >
+            <span class="contact-third-section-span-3"
+              >چگونه می توانم پیام خود را ارسال کنم ؟</span
+            >
+            <img
+              src="../../src/assets/icons/arrow-down.svg"
+              style="
+                filter: invert(100%) sepia(100%) saturate(6%) hue-rotate(239deg)
+                  brightness(5%) contrast(100%);
+              "
+            />
+          </div>
+          <div
+            class="contact-third-section-div-4 collapse"
+            id="collapseExample7"
+          >
+            <div></div>
+            لورم ایپسوم متن ساختـگی با تولید سادگی نامفـهوم از صـنعت چاپ، و با
+            استفاده از طراحان گرافیک است، چاپـگرها و متون بلکه روزنامه و مجله در
+            ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکــنولوژی مــورد
+            نیاز، و کاربردهای متـــنوع با هـــدف بهبود ابزارهای کاربــردی می
+            باشد، کتابهای زیادی در شصــت و سه درصد گذشته حال و آینده، شناخت
+            فراوان
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
